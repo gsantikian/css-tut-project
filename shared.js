@@ -4,6 +4,7 @@ const backdropEl = document.querySelector(".backdrop");
 const modalEl = document.querySelector(".modal");
 const toggleButtonEl = document.querySelector(".toggle-button");
 const mobileNavEl = document.querySelector(".mobile-nav");
+const ctaButton = document.querySelector(".main-nav__item--cta");
 
 for (let btn of selectPlanButtons) {
   btn.addEventListener("click", showModal);
@@ -34,3 +35,13 @@ function hideModal() {
   }
   backdropEl.classList.remove("open");
 }
+
+// ctaButton.addEventListener("animationstart", function (event) {
+//   console.log("animation started", event);
+// });
+// ctaButton.addEventListener("animationend", function (event) {
+//   console.log("animation ended", event);
+// });
+// ctaButton.addEventListener("animationiteration", function (event) {
+//   console.log("animation iteration", event);
+// });
